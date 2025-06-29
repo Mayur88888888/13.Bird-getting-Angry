@@ -1,5 +1,6 @@
 # 13.Bird-getting-Angry
 Excel Based Angry Bird similar game
+import all files in Excel developer mode.
 
 ![image](https://github.com/user-attachments/assets/3a814c8c-aceb-4a19-a084-cf3e0899cd83)
 
