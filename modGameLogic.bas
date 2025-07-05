@@ -8,18 +8,11 @@ Public BirdVelocity As Double
 Public BirdAngle As Double
 Public IsFiring As Boolean
 
-Sub abc()
-frmGame.Show
-
-End Sub
-
-
-
 Sub LaunchBird()
 'frmGame.Show
 
 If frmGame.txtAngle.Text = "" Or frmGame.txtAngle.Text = "" Then
-frmGame.txtAngle.Text = "10" And frmGame.txtAngle.Text = "20"
+frmGame.txtAngle.Text = 10 And frmGame.txtAngle.Text = 20
 End If
 
     Dim t As Double
@@ -36,6 +29,9 @@ End If
     
     x0 = frmGame.imgBird.Left
     y0 = frmGame.imgBird.Top
+    
+    
+    
     
     IsFiring = True
     
@@ -68,6 +64,13 @@ Sub ResetGame()
         .imgPig.Visible = True
        '.txtAngle.Text = "45"
        ' .txtPower.Text = "50"
+       
+       If frmGame.txtAngle.Text = "" Or frmGame.txtAngle.Text = "" Then
+frmGame.txtAngle.Text = "10"
+frmGame.txtPower.Text = "20"
+End If
+       
     End With
+     LoadLevel 1
 End Sub
 
